@@ -1,0 +1,41 @@
+<SystemConfiguration Model="PowerEdge R630" ServiceTag="888AA88" TimeStamp="Fri Jan 16 13:53:37 2015">
+
+<Component FQDD="iDRAC.Embedded.1">
+  <!-- Set username and password -->
+  <Attribute Name="Users.2#UserName">root</Attribute>
+  <Attribute Name="Users.2#Password">calvin</Attribute>
+</Component>
+
+<Component FQDD="iDRAC.Embedded.1">
+  <!-- Enable IPMI over LAN -->
+  <Attribute Name="IPMILan.1#Enable">Enabled</Attribute>
+</Component>
+
+<Component FQDD="iDRAC.Embedded.1">
+  <!-- iDRAC NIC settings -->
+  <Attribute Name="NIC.1#Enable">Enabled</Attribute>
+  <Attribute Name="NIC.1#Selection">Dedicated</Attribute>
+  <Attribute Name="IPv4.1#Enable">Enabled</Attribute>
+  <Attribute Name="IPv4.1#DHCPEnable">Enabled</Attribute>
+  <Attribute Name="IPv6.1#Enable">Disabled</Attribute>
+  <Attribute Name="IPv6.1#AutoConfig">Disabled</Attribute>
+</Component>
+
+<Component FQDD="iDRAC.Embedded.1">
+  <!-- Enable VNC server console -->
+  <Attribute Name="VNCServer.1#Enable">Enabled</Attribute>
+  <Attribute Name="VNCServer.1#Password">calvin</Attribute>
+</Component>
+
+<Component FQDD="BIOS.Setup.1-1">
+  <!-- BIOS boot mode and sequence -->
+  <Attribute Name="BootMode">Bios</Attribute>
+  <Attribute Name="BiosBootSeq">NIC.Integrated.1-3-1,HardDisk.List.1-1</Attribute> 
+</Component>
+
+<!-- NIC settings -->
+<Component FQDD="NIC.Integrated.1-3-1">
+  <Attribute Name="LegacyBootProto">PXE</Attribute>
+</Component>
+
+</SystemConfiguration>

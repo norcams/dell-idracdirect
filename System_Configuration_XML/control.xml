@@ -1,0 +1,20 @@
+<InstructionTable>
+  <InstructionRow>
+    <InstructionType>Configuration XML import Host control Instruction</InstructionType>
+    <Instruction>ShutdownType</Instruction>
+    <Value>Graceful</Value>
+    <ValuePossibilities>Graceful,Forced,NoReboot</ValuePossibilities>
+  </InstructionRow>
+  <InstructionRow>
+    <InstructionType>Configuration XML import Host control Instruction</InstructionType>
+    <Instruction>TimeToWait</Instruction>
+    <Value>300</Value>
+    <ValuePossibilities>Minimum value is 300 -Maximum value is 3600 seconds.</ValuePossibilities>
+  </InstructionRow>
+  <InstructionRow>              
+    <InstructionType>Configuration XML import Host control Instruction</InstructionType>
+    <Instruction>EndHostPowerState</Instruction>
+    <Value>On</Value>
+    <ValuePossibilities>On,Off</ValuePossibilities>
+  </InstructionRow>
+</InstructionTable>
