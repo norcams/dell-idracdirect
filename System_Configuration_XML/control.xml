@@ -2,7 +2,7 @@
   <InstructionRow>
     <InstructionType>Configuration XML import Host control Instruction</InstructionType>
     <Instruction>ShutdownType</Instruction>
-    <Value>Graceful</Value>
+    <Value>Forced</Value>
     <ValuePossibilities>Graceful,Forced,NoReboot</ValuePossibilities>
   </InstructionRow>
   <InstructionRow>
