@@ -12,6 +12,11 @@
 </Component>
 
 <Component FQDD="iDRAC.Embedded.1">
+  <!-- Enable autoconfig even if passwd has been changed from default -->
+  <Attribute Name="USB.1#ConfigurationXML">Enabled</Attribute>
+</Component>
+
+<Component FQDD="iDRAC.Embedded.1">
   <!-- iDRAC NIC settings -->
   <Attribute Name="NIC.1#Enable">Enabled</Attribute>
   <Attribute Name="NIC.1#Selection">Dedicated</Attribute>
